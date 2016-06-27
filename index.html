@@ -28,49 +28,93 @@
 		<div class="container">
 			<ul class="nav nav-pills nav-justified">
 				<li class="active"><a href="#Home" data-toggle="tab">Home</a></li>
-				<li><a href="#About" data-toggle="tab">About</a></li>
-				<li><a href="#Videos" data-toggle="tab">Videos</a></li>
+				<li><a href="#AboutUs" data-toggle="tab">About Us</a></li>
+				<li><a href="#Demo" data-toggle="tab">Demo</a></li>
+				<li><a href="#ContactUs" data-toggle="tab">Contact Us</a></li>
+				<li><a href="#Investor" data-toggle="tab">Investor</a></li>
 			</ul>
 
 			<div class="tab-content">
 				<div class="tab-pane fade in active"  id="Home">
-				<p>Smart Log Analytics  is  a company that provides software related to Source code and Log Processing  which help in  
-					root causing issues easily and help in log managment for future reference.
+					<p>Smart Log Analytics  is  a company that provides software related to  Log Processing  which help in  
+						root causing issues easily and help in log managment for future reference.
 
-				<p>	Currently in many sofware organization  millions of code is written by software Engineer who keep on moving from one assignment  to another . 
-					So if an issue occurs in software it may and often takes time to root cause the issue . Normally every issue is root caused by careful analysis of logs . Analysis of Logs need to be done by person with expertise in that  area of code associated with logs . In complex system  spanning  multiple modules it may take days to identify the issue  as it may to go thorugh multiple triage  steps before being assigned to correct team for Analysis.
+					<p>	The featrues supported are <br>
+						<li> Module based Dynamic filtering of Logs  </li>
+						<li> Log level ( Debug  , Info , Warning , Error) based Dynamic filtering of Logs </li>
+						<li> Replacement of  numbers  from enums or #defs  into strings for easy interpretation of Logs without referring to  source code . </li>
+						<li> Verbose meaning of logs message incase they are not self explanatory. </li>
+						<li> Direct reference to the source code  from log line  indicating from whihc part of the code the  log is getting printed </li>
+						<li> Facilitates  adding developer analysis about log lines  so that it is shared accross team </li>
+						<li> Helps different team members to understand log messages  from code not developed by them </li>
+						<li> Static code analysis that result in output as recommnetation  improving the  log message / debug message </li>
+						<li> Interface to add information  about the Functions that can replace  adding  Function header in code that make  </li>
+						<li> Mechanism  to  add web based documentation  about code easy and available to developer group within team /organization easy </li>
+				</div>
+				<div class="tab-pane fade"  id="AboutUs">
+					<p> TBD
+					
+				</div>
 
-				 <p> Often Log Analysis is associated with referring to software code  now and again for correct interpretation . It takes time to  decode  enum values  , predefined  MACROs  from the logs  .
+				<div class="tab-pane fade"  id="Demo">
+					<div class="col-md-2"> </div>
+					<div class="col-md-10">
+						<div class="row" >
+							<img src="images/demo/input1.jpg" alt="Input"> </img>
+						</div>
+						<div class="row">
+							<div class="col-md-1"> </div>
+							<div class="col-md-7"> Figure:Sample Input of log lines as normal text</div>
+						</div>
+						<div class="row"><br></div>
+						<div class="row">
+							The log lines are in normal text format and dont have information from which module they are coming from and from which line of the code they are printed from . Also the numbers in the log mean something whihc can be known only on referring to the code . This takes time. 
+						</div>
 
-				 <p> Normally Log Analysis starts with  manual search and filterig of key words or patterns  that an experianced professional  may have gathered working over a long time  . As a result there is a varying degree of quality log analysis among dai
-				 	
-				<li>  </li>
-
+						<br>
+						<hr>
+						<br>
+						<div class="row" >
+							<img src="images/demo/result1.jpg" alt="Input"> </img>
+						</div>
+						<div class="row">
+							<div class="col-md-1"> </div>
+							<div class="col-md-7"> Figure:Sample Output of Smart Log Analytics after processing the log lines above</div>
+						</div>
+						<div class="row"><br></div>
+						<div class="row">
+							Smart Log Analytics process and provides o/p where one  can understand  what the log means and  refers to the code  and module  from where it comes . The information can be  extended  in other ways based on the context .  
+						</div>
+					</div>
 
 				</div>
-				<div class="tab-pane fade"  id="About">
-					<p>Second para Hi there 
+
+				<div class="tab-pane fade"  id="ContactUs">
+					<p>TBD
 				</div>
-				<div class="tab-pane fade"  id="Videos">
-					<p>Third para Hi there 
+				<div class="tab-pane fade"  id="Investor">
+					<p>TBD 
 				</div>
 			</div>
 		</div>
 
+<!---
 
 	<footer>
 		<div class="container">
 			<hr>
 
+
 			<p>
-				<small><a href="http://facebook.com/askorama">Like me</a> On facebook</small></p>
+				<small><a href="https://www.facebook.com/santosh.k.ray.7">Like me</a> On facebook</small></p>
 			<p>	<small><a href="http://twitter.com/wiredwiki">Ask whatever </a> On Twitter</small></p>
 			<p>	<small><a href="http://youtube.com/wiredwiki">Subscribe me</a> On Youtube</small>
 				
 			</p>
-		</div> <!-- end container -->
+		</div> 
 	</footer>
-		
+-->
+	
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
