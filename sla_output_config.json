@@ -1,0 +1,9 @@
+var sla_output_info = {
+"sla_output_config":
+	[ 
+ 		{
+		 "logfile":"kernel.txt",
+		 "jsonfile":"kernel_txt.json" 
+	}
+ ] 
+}

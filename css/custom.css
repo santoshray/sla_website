@@ -1,0 +1,358 @@
+/*
+* {
+    border: 1px solid red !important;
+}
+*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width:500px){
+    p {
+        color: blue;
+    }
+}
+.grid {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    margin-bottom: 0px;
+    display: flex;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.audio {
+    color: #00000F;
+    background-color: #ccffcc;    
+}
+
+.pr_debug , .debug {
+    color: #0000FF;
+    background-color: #ccffcc;    
+}
+
+
+.diff,.pr_err , .dev_err ,.error{
+    color: #000000;
+    background-color: #DD6060;    
+
+}
+
+.event{
+    color: #000000;
+    background-color: #D0E4BF;    
+
+}
+
+.pr_info , .info {
+    color: #FFFFFF;
+    background-color: #FF0000;    
+}
+
+.mod-buttons , .logtype_buttons {
+    padding: 5px 5px 5px !important;
+    width:100%;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    font-size: 15px !important;
+    background-color: #F36C8C;
+    font-weight: bold;
+    text-shadow: 1px 1px #F36C8C;
+    color: #ffffff;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border: 1px solid #F36C8C;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+.mod-checkbox
+{
+    color: #000000;
+    width:10%;   
+}
+
+.log-buttons , .dropdown {
+    padding: 5px 5px 5px !important;
+    font-size: 15px !important;
+    float:left;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    background-color: #B2B2B2;
+    font-weight: bold;
+    text-shadow: 1px 1px #B2B2B2;
+    color: #000000;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border: 1px solid #B2B2B2;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+hr {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border: 0;
+  border-top: 1px solid #000000;
+}
+
+
+
+
+ #hintbox{
+    display:none;
+    position: absolute;
+    /*font-size: 12 px;*/
+    background-color: #000000;
+    color: #FFFFFF;
+    /*border: 1px solid red;*/
+    padding: 10px;
+    opacity: 1.0;
+    border-radius:5px;
+  }  
+
+
+
+/* SLIDE THREE */
+.slideThree,.log-type-debug,.log-type-info,.mod-audio, .log-type-warn,.log-type-error,
+.submodule_mbhc,.submodule_ASoc,.submodule_routing,.SubModule_All,.submodule_codec,.submodule_asm,
+.submodule_afe,.submodule_adm{
+  width: 85px;
+  height: 26px;
+  background: #456C2A;
+  margin: 0px auto;
+
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  position: relative;
+
+  -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+  -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+  box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+}
+
+.slideThree:after , .log-type-debug:after, .log-type-info:after, 
+.mod-audio:after, .log-type-warn:after,.log-type-error:after,
+.submodule_mbhc:after,.submodule_ASoc:after,.submodule_routing:after,.SubModule_All:after,.submodule_codec:after,.submodule_asm:after,
+.submodule_afe:after,.submodule_adm:after { 
+  content: 'hide';
+  font: 12px/26px Arial, sans-serif;
+  color: #FFFFFF;
+  position: absolute;
+  right: 10px;
+  z-index: 0;
+  font-weight: bold;
+ /* text-shadow: 1px 1px 0px rgba(255,255,255,.15);*/
+}
+
+.slideThree:before, .log-type-debug:before,.log-type-info:before, .mod-audio:before ,.log-type-warn:before,.log-type-error:before,
+.submodule_mbhc:before,.submodule_ASoc:before,.submodule_routing:before,.SubModule_All:before,.submodule_codec:before,.submodule_asm:before,
+.submodule_afe:before,.submodule_adm:before {
+  content: 'show';
+  font: 12px/26px Arial, sans-serif;
+  color: #00bf00;
+  position: absolute;
+  left: 10px;
+  z-index: 0;
+  font-weight: bold;
+}
+
+.slideThree label , 
+.log-type-debug label, 
+.log-type-info label, .mod-audio label,.log-type-warn label,.log-type-error label,.submodule_mbhc label,
+.submodule_ASoc label,.submodule_routing label,.SubModule_All label,.submodule_codec label,.submodule_asm label,.submodule_afe label,
+.submodule_adm label{
+  display: block;
+  width: 39px;
+  height: 20px;
+
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  transition: all .4s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 1;
+
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+  background: #fcfff4;
+
+  background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+}
+
+.slideThree input[type=checkbox]:checked + label {
+  left: 45px;
+}
+
+.log-type-debug input[type=checkbox]:checked + label {
+  left: 45px;
+}
+
+.log-type-info input[type=checkbox]:checked + label {
+  left: 45px;
+}
+
+.mod-audio input[type=checkbox]:checked + label {
+  left: 45px;
+}
+
+.log-type-warn input[type=checkbox]:checked + label {
+  left: 45px;
+}
+
+.SubModule_All input[type=checkbox]:checked + label {
+  left: 45px;
+}
+.log-type-error input[type=checkbox]:checked + label {
+  left: 45px;
+}
+
+.submodule_mbhc input[type=checkbox]:checked + label {
+  left: 45px;
+}
+
+.submodule_ASoc input[type=checkbox]:checked + label {
+  left: 45px;
+}
+
+.submodule_routing input[type=checkbox]:checked + label {
+  left: 45px;
+}
+
+.submodule_codec input[type=checkbox]:checked + label {
+  left: 45px;
+}
+
+.submodule_asm input[type=checkbox]:checked + label {
+  left: 45px;
+}
+
+.submodule_afe input[type=checkbox]:checked + label {
+  left: 45px;
+}
+
+.submodule_adm input[type=checkbox]:checked + label {
+  left: 45px;
+}
+
+.slideThree input[type=checkbox] {
+  visibility: hidden;
+}
+
+.log-type-debug input[type=checkbox] {
+  visibility: hidden;
+}
+.log-type-info input[type=checkbox] {
+  visibility: hidden;
+}
+.mod-audio input[type=checkbox] {
+  visibility: hidden;
+}
+.log-type-warn input[type=checkbox] {
+  visibility: hidden;
+}
+.log-type-error input[type=checkbox] {
+  visibility: hidden;
+}
+.submodule_mbhc input[type=checkbox] {
+  visibility: hidden;
+}
+.submodule_ASoc input[type=checkbox] {
+  visibility: hidden;
+}
+.submodule_routing input[type=checkbox] {
+  visibility: hidden;
+}
+.SubModule_All input[type=checkbox] {
+  visibility: hidden;
+}
+.submodule_codec input[type=checkbox] {
+  visibility: hidden;
+}
+.submodule_asm input[type=checkbox] {
+  visibility: hidden;
+}
+.submodule_afe input[type=checkbox] {
+  visibility: hidden;
+}
+.submodule_adm input[type=checkbox] {
+  visibility: hidden;
+}
+.submodule_adm input[type=checkbox] {
+  visibility: hidden;
+}
+  

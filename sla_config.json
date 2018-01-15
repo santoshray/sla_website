@@ -1,0 +1,5 @@
+var sla_config = 
+{
+//	"source_root_link":"http:\/\/localhost:8080\\source_files\\"
+ "source_root_link":"http:\/\/opengrok.qualcomm.com\/source\/xref\/LA.HB.1.1.1\/"
+}

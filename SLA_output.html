@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
+	<title>Soft-logic-info</title>
+<!--
+  jQuery is a common JavaScript library for reading and making changes to the
+  Document Object Model (DOM). The DOM is a tree that contains information
+  about what is actually visible on a website.
+
+  While HTML is a static document, the browser converts HTML to the
+  DOM and the DOM can change. In fact, JavaScript's power comes from
+  its ability to manipulate the DOM, which is essentially a JavaScript
+  object. When JavaScript makes something interesting happen on a
+  website, it's likely the action happened because JavaScript changed
+  the DOM. jQuery is fast and easy to use, but it doesn't do anything
+  you can't accomplish with vanilla (regular) JavaScript.
+  -->
+  <script src="js/jQuery.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+  <!-- More on helper.js in the class -->
+
+</head>
+<body>
+	<div  id="hintbox"></div>
+	<div class="container">
+		<div class="row">
+
+		<!--
+			<img src="res/slalogo.jpg" width="180" height="40" ></img>
+		-->
+		</div>
+		<hr>
+<!--
+		<div class="row" id = "modules">
+			<div class = 'col-md-2'>
+				<b>Modules : </b>
+			 </div>
+			<div class = 'col-md-1'>
+				<div class="mod-audio">
+				  <input type="checkbox" value="None" id="mod-audio" name="check" onClick="showandhide('non-audio',this)" />
+				  <label for="mod-audio"></label>
+				</div>
+			</div>
+			<div class = 'col-md-1' ><b>audio </b>
+				<input type="checkbox" id="module-audio" class = "mod-checkbox hover" hinttext="hide non audio logs" value="audio" onClick="showandhide('non-audio',this)">
+			 </div>
+
+		</div>
+		<hr>
+-->
+
+		<div class="row sub-modules" id = "sub-modules">
+			<div class = 'col-md-2'>
+				<b>audio-Modules : </b>
+			 </div>
+
+			<div class = 'col-md-1'>
+				<div class="submodule_adm">
+				  <input type="checkbox" value="None" id="submodule_adm" name="check" onClick="showandhide('adm',this)" />
+				  <label for="submodule_adm"></label>
+				</div>
+			</div>
+			<div class = 'col-md-1'> <b>adm</b> </div>
+
+			<div class = 'col-md-1'>
+				<div class="submodule_afe">
+				  <input type="checkbox" value="None" id="submodule_afe" name="check" onClick="showandhide('afe',this)" />
+				  <label for="submodule_afe"></label>
+				</div>
+			</div>
+			<div class = 'col-md-1'><b>afe</b></div>
+
+			<div class = 'col-md-1'>
+				<div class="submodule_asm">
+				  <input type="checkbox" value="None" id="submodule_asm" name="check" onClick="showandhide('asm',this)" />
+				  <label for="submodule_asm"></label>
+				</div>
+			</div>
+			<div class = 'col-md-1'><b>asm</b></div>
+
+			<div class = 'col-md-1'>
+				<div class="submodule_codec">
+				  <input type="checkbox" value="None" id="submodule_codec" name="check" onClick="showandhide('codec',this)" />
+				  <label for="submodule_codec"></label>
+				</div>
+			</div>
+			<div class = 'col-md-1'>
+				<b>codec </b>
+<!--				<input type="checkbox" id="sub-module-codec" class = "mod-checkbox hover" hinttext="hide codec logs" value="codec" onClick="showandhide('codec',this)"> -->
+			 </div>
+			<!--
+			<div class = 'col-md-1'>
+				dapm <input type="checkbox" id="sub-module-dapm" class = "mod-checkbox hover" hinttext="hide dapm logs" value="dapm" onClick="showandhide('dapm',this)">
+			 </div>
+			<div class = 'col-md-1'>
+				hdmi <input type="checkbox" id="sub-module-hdmi" class = "mod-checkbox hover" hinttext="hide hdmi logs" value="hdmi" onClick="showandhide('hdmi',this)">
+			 </div>
+-->
+
+		</div>
+		<div class="row sub-modules" id = "sub-modules">
+			<div class = 'col-md-2'>
+			</div>
+
+
+			<div class = 'col-md-1'>
+				<div class="submodule_mbhc">
+				  <input type="checkbox" value="None" id="submodule_mbhc" name="check" onClick="showandhide('mbhc',this)" />
+				  <label for="submodule_mbhc"></label>
+				</div>
+			</div>
+			<div class = 'col-md-1'>
+				<b>mbhc </b>
+<!--				<input type="checkbox" id="sub-module-mbhc" class = "mod-checkbox hover" hinttext="hide mbhc logs" value="mbhc" onClick="showandhide('mbhc',this)"> -->
+			 </div>
+
+			<div class = 'col-md-1'>
+				<div class="submodule_ASoc">
+				  <input type="checkbox" value="None" id="submodule_ASoc" name="check" onClick="showandhide('Asoc',this)" />
+				  <label for="submodule_ASoc"></label>
+				</div>
+			</div>
+			<div class = 'col-md-1'>
+				<b>ASoc </b>
+<!--			   <input type="checkbox" id="sub-module-asoc" class = "mod-checkbox hover" hinttext="hide Asoc logs" value="ASoc" onClick="showandhide('ASoc',this)"> -->
+			 </div>
+
+			<div class = 'col-md-1'>
+				<div class="submodule_routing">
+				  <input type="checkbox" value="None" id="submodule_routing" name="check" onClick="showandhide('routing',this)" />
+				  <label for="submodule_routing"></label>
+				</div>
+			</div>
+			<div class = 'col-md-1'>
+				<b>routing </b>
+<!--				<input type="checkbox" id="sub-module-routing" class = "mod-checkbox hover" hinttext="hide routing logs" value="routing" onClick="showandhide('routing',this)"> -->
+			 </div>
+
+			<div class = 'col-md-1'>
+				<div class="SubModule_All">
+				  <input type="checkbox" value="None" id="SubModule_All" name="check" onClick="showandhide('non-audio',this)" />
+				  <label for="SubModule_All"></label>
+				</div>
+			</div>
+			<div class = 'col-md-1'>
+				<b>All non-audio</b>
+<!--				<input type="checkbox" id="sub-module-codec" class = "mod-checkbox hover" hinttext="hide codec logs" value="codec" onClick="showandhide('codec',this)"> -->
+			 </div>
+		</div>
+
+		<hr>
+
+		<div class="row log-category" >
+			<div class = 'col-md-2'>
+				<b>Log-Category : </b>
+			 </div>
+
+
+			<div class = 'col-md-1'>
+				<div class="log-type-error">
+				  <input type="checkbox" value="None" id="log-type-error" name="check" onClick="showandhide('error',this)" />
+				  <label for="log-type-error"></label>
+				</div>
+			</div>
+			<div class = 'col-md-1'>
+				<b>error </b>
+<!--				<input type="checkbox" id="log-type-error"  class = "logtype_checkbox hover" hinttext="hide Error logs " value="error" onClick="showandhide('error',this)"> -->
+			 </div>
+
+
+			<div class = 'col-md-1'>
+				<div class="log-type-debug">
+<!--				  <input type="checkbox" value="None" id="log-type-debug" name="check" onClick="showandhide('debug',this)" /> -->
+						<input type="checkbox" id="log-type-debug" class = "logtype_checkbox hover" hinttext="hide debug logs " value="debug" onClick="showandhide('debug',this)">
+				  <label for="log-type-debug"></label>
+				</div>
+			</div>
+			<div class = 'col-md-1'>
+				<b>debug </b>
+<!--				<input type="checkbox" id="log-type-debug" class = "logtype_checkbox hover" hinttext="hide debug logs " value="debug" onClick="showandhide('debug',this)"> -->
+			 </div>
+
+			<div class = 'col-md-1'>
+				<div class="log-type-info">
+						<input type="checkbox" id="log-type-info" class = "logtype_checkbox hover" hinttext="hide info logs " value="info" onClick="showandhide('info',this)">
+				  <label for="log-type-info"></label>
+				</div>
+			</div>
+			<div class = 'col-md-1'>
+				<b>info </b>
+<!--				<input type="checkbox" id="log-type-info" class = "logtype_checkbox hover" hinttext="hide info logs " value="info" onClick="showandhide('info',this)"> -->
+			 </div>
+
+
+			<div class = 'col-md-1'>
+				<div class="log-type-warn">
+				  <input type="checkbox" value="None" id="log-type-warn" name="check" onClick="showandhide('warn',this)" />
+				  <label for="log-type-warn"></label>
+				</div>
+			</div>
+			<div class = 'col-md-1'>
+				<b>warning</b>
+<!--				<input type="checkbox" id="log-type-warn" class = "logtype_checkbox hover" hinttext="hide warning logs "value="warning" onClick="showandhide('warn',this)"> -->
+	    	</div>
+		</div>
+
+		<hr>
+
+
+
+
+	<div class="row" >
+			<div class="col-md-1" >
+			    <ul id = "log_name_buttons" >
+			    </ul>
+			</div>
+			<div class="col-md-11" id = "LogMessage">
+
+			</div> <!-- End of  LogMessage -->
+		</div>
+	</div> <!-- End of Container-->
+
+	<script src="adm_faillogs_txt.json"></script>
+	<script src="js/preprocess.js"></script>
+
+</body>
+</html>
